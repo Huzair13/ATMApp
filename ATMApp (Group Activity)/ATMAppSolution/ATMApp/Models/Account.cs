@@ -1,15 +1,13 @@
-﻿namespace ATMApp.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+
+namespace ATMApp.Models
 {
     public class Account
     {
-
+        [Key]
         public int AccountId { get; set; }
 
         public decimal Balance { get; set; }
-
-        public string AccountNumber { get; set; }
-        public string AccountHolderName { get; set; }
-
-        public IEnumerable<Card> Cards { get; set; }
     }
 }

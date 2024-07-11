@@ -1,3 +1,6 @@
+using ATMApp.Contexts;
+using Microsoft.EntityFrameworkCore;
+
 namespace ATMApp
 {
     public class Program
@@ -13,7 +16,14 @@ namespace ATMApp
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            builder.Services.AddDbContext<ATMContext>(options =>
+            {
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+            });
+
+
             var app = builder.Build();
+
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
@@ -23,7 +33,6 @@ namespace ATMApp
             }
 
             app.UseAuthorization();
-
 
             app.MapControllers();
 

@@ -2432,6 +2432,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Microsoft.EntityFrameworkCore >= 6.0.32",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.32",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.32",
       "Swashbuckle.AspNetCore >= 6.5.0"
@@ -2444,11 +2445,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\VC\\Documents\\Presido Training 2\\ATMApp (Group Activity)\\ATMAppSolution\\ATMApp\\ATMApp.csproj",
+      "projectUniqueName": "C:\\Users\\VC\\Documents\\Projects\\Intern100\\11th-July-2024\\ATMApp (Group Activity)\\ATMAppSolution\\ATMApp\\ATMApp.csproj",
       "projectName": "ATMApp",
-      "projectPath": "C:\\Users\\VC\\Documents\\Presido Training 2\\ATMApp (Group Activity)\\ATMAppSolution\\ATMApp\\ATMApp.csproj",
+      "projectPath": "C:\\Users\\VC\\Documents\\Projects\\Intern100\\11th-July-2024\\ATMApp (Group Activity)\\ATMAppSolution\\ATMApp\\ATMApp.csproj",
       "packagesPath": "C:\\Users\\VC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\VC\\Documents\\Presido Training 2\\ATMApp (Group Activity)\\ATMAppSolution\\ATMApp\\obj\\",
+      "outputPath": "C:\\Users\\VC\\Documents\\Projects\\Intern100\\11th-July-2024\\ATMApp (Group Activity)\\ATMAppSolution\\ATMApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2486,6 +2487,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[6.0.32, )"
+          },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[6.0.32, )"
@@ -2520,7 +2525,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
       }
     }
   }
